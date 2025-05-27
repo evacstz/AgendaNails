@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AgendaNails</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -16,12 +16,12 @@
     <div id="lado-direito">
         <h2 id="titulo-direito">Seja bem-vindo(a) à tela de login!</h2>
 
-        <form action="" id="form">
-            <label for="nome-email" class="rotulos">Nome de usuário/e-mail</label>
-            <input type="text" name="nome-email" class="input-nome-senha">
+        <form action="login.php" method="POST" id="form">
+            <label for="email" class="rotulos">E-mail</label>
+            <input type="text" name="email" class="input-email-senha">
 
             <label for="senha" class="rotulos">Senha</label>
-            <input type="password" name="senha" class="input-nome-senha">
+            <input type="password" name="senha" class="input-email-senha">
 
             <div id="div-botao">
                 <input type="submit" name="entrar" id="botao-entrar" value="ENTRAR">
