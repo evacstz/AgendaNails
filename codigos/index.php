@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="lado-esquerdo">
-        <h2 id="titulo-esquerdo"> É um prazer te ver aqui de novo </h2>
+        <h2 id="titulo-esquerdo">É um prazer te ver aqui de novo</h2>
         <img src="assets/img/freepik__adjust__38993.png" alt="Unhas e esmaltes" id="foto-decorativa">
     </div>
 
@@ -28,9 +28,9 @@
             </div>
         </form>
 
-        <div id="redireciona-cadastro">
+        <div id="redireciona-para-cadastro">
             <p>Ainda não tem uma conta?</p>
-            <p>Cadastre-se </p>
+            <p>Cadastre-se</p>
         </div>
     </div>
 </body>
