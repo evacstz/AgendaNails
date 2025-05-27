@@ -12,7 +12,11 @@
             if($sql->rowCount() > 0) {
                 $dado = $sql->fetch();
 
-                echo $dado['id'];
+                $_SESSION['iduser'] = $dado['id'];
+
+                return true;
+            } else {
+                return false;
             }
         }
     }
