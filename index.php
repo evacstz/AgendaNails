@@ -18,10 +18,10 @@
 
         <form action="login.php" method="POST" id="form">
             <label for="email" class="rotulos">E-mail</label>
-            <input type="text" name="email" class="input-email-senha">
+            <input type="text" name="email" class="input-email-senha" required>
 
             <label for="senha" class="rotulos">Senha</label>
-            <input type="password" name="senha" class="input-email-senha">
+            <input type="password" name="senha" class="input-email-senha" required>
 
             <div id="div-botao">
                 <input type="submit" name="entrar" id="botao-entrar" value="ENTRAR">
