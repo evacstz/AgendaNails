@@ -11,14 +11,14 @@
 
         if($user->login($email, $senha) == true) {
             if(isset($_SESSION['iduser'])) {
-                header("Location: paginarestrita.php");
+                header("Location: pagina-restrita.php");
             } else {
-                header("Location: index.php");
+                header("Location: pagina-login.php");
             }
         } else {
-            header("Location: index.php");
+            header("Location: pagina-login.php");
         }
     } else {
-        header("Location: index.php");
+        header("Location: pagina-login.php");
     }
 ?>

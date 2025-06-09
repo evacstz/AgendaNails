@@ -2,5 +2,5 @@
     session_start();
     unset($_SESSION['iduser']);
 
-    header("Location: index.php");
+    header("Location: pagina-login.php");
 ?>
