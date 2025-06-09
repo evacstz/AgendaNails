@@ -9,8 +9,9 @@ body {
     display: flex;
 }
 
-#lado-esquerdo {
-    width: 680px;
+.lado-esquerdo {
+    height: 100vh;
+    width: 50vw;
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
@@ -19,7 +20,7 @@ body {
     padding: 60px;
 }
 
-#titulo-esquerdo {
+.titulo-esquerdo {
     color: #c12a52;
     font-size: 32px;
     font-weight: 700;
@@ -27,12 +28,12 @@ body {
     text-align: center;
 }
 
-#foto-decorativa {
+.foto-decorativa {
     width: 380px;
 }
 
-#lado-direito {
-    width: 760px;
+.lado-direito {
+    width: 50vw;
     background-color: #9c404d;
     display: flex;
     flex-direction: column;
@@ -42,14 +43,14 @@ body {
     color: #FFFFFF;
 }
 
-#titulo-direito {
+.titulo-direito {
     font-size: 28px;
     font-weight: 600;
     margin-bottom: 20px;
     text-align: center;
 }
 
-#form {
+.form-login-cadastro {
     width: 100%;
     max-width: 400px;
     display: flex;
@@ -62,7 +63,7 @@ body {
     font-weight: 600;
 }
 
-.input-email-senha {
+.input-nome-email-senha {
     border: 0;
     border-radius: 8px;
     background: #EDEDED;
@@ -70,7 +71,12 @@ body {
     height: 35px;
 }
 
-#botao-entrar {
+.div-botao {
+    display: flex;
+    justify-content: center;
+}
+
+.botao-entrar-cadastrar {
     height: 35px;
     width: 180px;
     border: 0;
@@ -81,17 +87,12 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-#botao-entrar:hover {
+.botao-entrar-cadastrar:hover {
     background-color: #DA8291;
     color: #ffffff;
 }
 
-#div-botao {
-    display: flex;
-    justify-content: center;
-}
-
-#redireciona-para-cadastro {
+.redireciona-login-cadastro {
     text-align: center;
     margin-top: 15px;
 }
