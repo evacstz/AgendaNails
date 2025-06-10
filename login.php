@@ -14,11 +14,14 @@
                 header("Location: pagina-restrita.php");
             } else {
                 header("Location: pagina-login.php");
+                exit;
             }
         } else {
             header("Location: pagina-login.php");
+            exit;
         }
     } else {
         header("Location: pagina-login.php");
+        exit;
     }
 ?>

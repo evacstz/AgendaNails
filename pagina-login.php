@@ -28,6 +28,14 @@
             </div>
         </form>
 
+        <div class="email-senha-inc">
+            <?php
+                if (isset($_GET['erro']) && $_GET['erro'] == 1) {
+                    echo '<p>E-mail ou senha incorretos, tente novamente.</p>';
+                }
+            ?>
+        </div>
+
         <div class="redirecionamento">
             <p>Ainda não tem uma conta?</p>
             <a href="pagina-cadastro.php" class="redireciona-login-cadastro">Cadastre-se</a> 

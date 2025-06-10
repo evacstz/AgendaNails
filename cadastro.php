@@ -14,6 +14,6 @@
     // echo $senha;
 
     if(empty($nome) or empty($email) or empty($senha)) {
-        echo 'não pode entrar';
+        echo 'Preencha todos os campos.';
     }
 ?>
