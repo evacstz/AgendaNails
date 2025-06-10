@@ -18,13 +18,13 @@
 
         <form action="cadastro.php" method="POST" class="form-login-cadastro">
             <label for="nome-completo" class="rotulos">Nome completo</label>
-            <input type="text" name="nome-completo" class="input-nome-email-senha" required>
+            <input type="text" name="nome-completo" class="input-nome-email-senha">
 
             <label for="email" class="rotulos">E-mail</label>
-            <input type="text" name="email" class="input-nome-email-senha" required>
+            <input type="text" name="email" class="input-nome-email-senha">
 
             <label for="senha" class="rotulos">Senha</label>
-            <input type="password" name="senha" class="input-nome-email-senha" required>
+            <input type="password" name="senha" class="input-nome-email-senha">
 
             <div class="div-botao">
                 <input type="submit" name="cadastrar" class="botao-entrar-cadastrar" value="CADASTRAR">
