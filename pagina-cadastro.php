@@ -31,9 +31,9 @@
             </div>
         </form>
 
-        <div class="redireciona-login-cadastro">
+        <div class="redirecionamento">
             <p>Já tem uma conta?</p>
-            <p>Entre aqui</p>
+            <a href="pagina-login.php" class="redireciona-login-cadastro">Entre aqui</a>
         </div>
     </div>
 </body>

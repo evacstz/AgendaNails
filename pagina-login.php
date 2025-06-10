@@ -28,9 +28,9 @@
             </div>
         </form>
 
-        <div class="redireciona-login-cadastro">
+        <div class="redirecionamento">
             <p>Ainda não tem uma conta?</p>
-            <p>Cadastre-se</p>
+            <a href="pagina-cadastro.php" class="redireciona-login-cadastro">Cadastre-se</a> 
         </div>
     </div>
 </body>
