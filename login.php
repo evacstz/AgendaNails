@@ -11,7 +11,7 @@
 
         if($user->login($email, $senha) == true) {
             if(isset($_SESSION['iduser'])) {
-                header("Location: pagina-restrita.php");
+                header("Location: pagina-inicial.php");
             } else {
                 header("Location: pagina-login.php");
                 exit;

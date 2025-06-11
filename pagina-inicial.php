@@ -9,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Restrita</title>
+    <title>Página Inicial</title>
 </head>
 <body>
     <h1>Seja bem-vindo ao sistema.🖥️</h1>
