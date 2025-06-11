@@ -1,7 +1,7 @@
 <?php
     require_once 'conexao.php';
 
-    if(!isset($_POST['nome-completo']) or !isset($_POST['email']) or !isset($_POST['senha'])) {
+    if(!isset($_POST['nome-completo']) && !isset($_POST['email']) && empty($_POST['senha'])) {
         exit('Não é permitido acessar.');
     }
 
@@ -13,7 +13,7 @@
     // echo $email;
     // echo $senha;
 
-    if(empty($nome) or empty($email) or empty($senha)) {
-        echo 'Preencha todos os campos.';
+    if(!$email || !$senha) { //socorro?????????????????
+        exit("Por favor, preencha todos os campos");
     }
 ?>
