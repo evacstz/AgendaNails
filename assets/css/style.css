@@ -71,6 +71,10 @@ body {
     height: 35px;
 }
 
+.input-nome-email-senha:focus {
+    outline: 2.5px solid #DA8291;
+}
+
 .div-botao {
     display: flex;
     justify-content: center;
@@ -85,6 +89,7 @@ body {
     color: #c12a52;
     font-weight: 600;
     transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
 }
 
 .botao-entrar-cadastrar:hover {
