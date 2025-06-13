@@ -3,14 +3,14 @@
         public function login($email, $senha) {
             global $conexao;
 
-            $sql = "SELECT * FROM usuarios WHERE email = :email AND senha = :senha";
-            $sql = $conexao->prepare($sql);
-            $sql->bindValue("email", $email);
-            $sql->bindValue("senha", md5($senha));
-            $sql->execute();
+            $consulta = "SELECT * FROM usuarios WHERE email = :email AND senha = :senha";
+            $consulta = $conexao->prepare($consulta);
+            $consulta->bindValue("email", $email);
+            $consulta->bindValue("senha", md5($senha));
+            $consulta->execute();
 
-            if($sql->rowCount() > 0) {
-                $dado = $sql->fetch();
+            if($consulta->rowCount() > 0) {
+                $dado = $consulta->fetch();
 
                 $_SESSION['iduser'] = $dado['id'];
 
