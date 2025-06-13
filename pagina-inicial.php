@@ -13,7 +13,7 @@
 </head>
 <body>
     <h1>Seja bem-vindo ao sistema.🖥️</h1>
-    <a href="logout.php">SAIR</a>
+    <a href="login/logout.php">SAIR</a>
 </body>
 </html>
 
