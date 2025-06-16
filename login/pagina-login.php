@@ -14,24 +14,26 @@
     </div>
 
     <div class="lado-direito">
-        <h2 class="titulo-direito">Seja bem-vindo(a) à tela de login!</h2>
+        <div class="campo-login-cadastro">
+            <h2 class="titulo-direito">Seja bem-vindo(a) à tela de login!</h2>
 
-        <form action="login.php" method="POST" class="form-login-cadastro">
-            <label for="email" class="rotulos">E-mail</label>
-            <input type="text" name="email" class="input-nome-email-senha" required>
+            <form action="login.php" method="POST" class="form-login-cadastro">
+                <label for="email" class="rotulos">E-mail</label>
+                <input type="text" name="email" class="input-nome-email-senha" required>
 
-            <label for="senha" class="rotulos">Senha</label>
-            <input type="password" name="senha" class="input-nome-email-senha" required>
+                <label for="senha" class="rotulos">Senha</label>
+                <input type="password" name="senha" class="input-nome-email-senha" required>
 
-            <div class="div-botao">
-                <input type="submit" name="entrar" class="botao-entrar-cadastrar" value="ENTRAR">
-            </div>
-        </form>
+                <div class="div-botao">
+                    <input type="submit" name="entrar" class="botao-entrar-cadastrar" value="ENTRAR">
+                </div>
+            </form>
+        </div>
 
         <div class="email-senha-inc">
             <?php
                 if (isset($_GET['erro']) && $_GET['erro'] == 1) {
-                    echo '<p>E-mail ou senha incorretos, tente novamente.</p>';
+                    echo '<p>E-mail ou senha incorretos.</p>';
                 }
             ?>
         </div>
