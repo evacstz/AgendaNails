@@ -9,11 +9,7 @@
     $email = trim($_POST['email']);
     $senha = trim($_POST['senha']);
 
-    // echo $nome;
-    // echo $email;
-    // echo $senha;
-
-    if(!$nome || !$email || !$senha) {
+    if(empty($nome) || empty($email) || empty($senha)) {
         exit("Por favor, preencha todos os campos");
     }
 ?>
