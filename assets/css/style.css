@@ -50,6 +50,10 @@ body {
     text-align: center;
 }
 
+.campo-login-cadastro {
+    background-color: aqua;
+}
+
 .form-login-cadastro {
     width: 100%;
     max-width: 400px;
@@ -95,6 +99,17 @@ body {
 .botao-entrar-cadastrar:hover {
     background-color: #DA8291;
     color: #ffffff;
+}
+
+.email-senha-inc {
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 25px;
+
+    background-color: red;
+    color: #000000;
+    font-weight: 600;
 }
 
 .redirecionamento {
