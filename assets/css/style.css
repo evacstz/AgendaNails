@@ -50,10 +50,6 @@ body {
     text-align: center;
 }
 
-.campo-login-cadastro {
-    background-color: aqua;
-}
-
 .form-login-cadastro {
     width: 100%;
     max-width: 400px;
@@ -107,8 +103,7 @@ body {
     border-radius: 5px;
     font-size: 25px;
 
-    background-color: red;
-    color: #000000;
+    color: #ffffff;
     font-weight: 600;
 }
 
