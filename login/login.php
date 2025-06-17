@@ -1,5 +1,5 @@
 <?php
-    if(isset($_POST['email']) and !empty($_POST['email']) and isset($_POST['senha']) and !empty($_POST['senha'])) {
+    if(isset($_POST['email']) && !empty($_POST['email']) && isset($_POST['senha']) && !empty($_POST['senha'])) {
 
         require_once '../conexao.php';
         require_once 'Usuario.class.php';
