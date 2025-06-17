@@ -1,7 +1,7 @@
 <?php
     require_once 'conexao.php';
 
-    if(isset($_SESSION['iduser']) and !empty($_SESSION['iduser'])):
+    if(isset($_SESSION['iduser']) && !empty($_SESSION['iduser'])):
 ?>
 
 <!DOCTYPE html>
