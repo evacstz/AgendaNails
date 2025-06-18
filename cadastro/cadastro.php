@@ -15,17 +15,23 @@
 
     if(isset($_POST['nome-completo']) && isset($_POST['email']) && isset($_POST['senha'])) {
         try {
-            $consulta = $conexao->prepare("INSERT INTO usuarios (nome, email, senha) VALUES (:nome, :email, :senha)");
-            $consulta->bindValue(":nome", $nome);
-            $consulta->bindValue(":email", $email);
-            $consulta->bindValue(":senha", md5($senha));
-            $consulta->execute();
+            $consulta_verificacao = $conexao->prepare("SELECT * FROM usuarios WHERE email = :email");
+            $consulta_verificacao->bindValue(":email", $email);
+            $consulta_verificacao->execute();
+
+                if ($consulta_verificacao->rowCount() > 0) {
+                    exit("Este email já está cadastrado");
+                }
+                
+            $consulta_insercao = $conexao->prepare("INSERT INTO usuarios (nome, email, senha) VALUES (:nome, :email, :senha)");
+            $consulta_insercao->bindValue(":nome", $nome);
+            $consulta_insercao->bindValue(":email", $email);
+            $consulta_insercao->bindValue(":senha", md5($senha));
+            $consulta_insercao->execute();
         } catch (PDOException $erro) { 
             echo "Erro: " . $erro->getMessage(); 
         }
     } else {
-        echo "Erro ao tentar se cadastrar.s";
+        echo "Erro ao tentar se cadastrar.";
     }
-
-    
 ?>
