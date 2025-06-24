@@ -20,7 +20,7 @@
                 <div class="menu">
                     <a class="abas-menu">Página inicial</a>
                     <a class="abas-menu">Clientes</a>
-                    <a href="#" class="abas-menu">Serviços</a>
+                    <a href="cadastro-servicos/pagina-servicos.php" class="abas-menu">Serviços</a>
                     <a class="abas-menu">Agendamentos</a>
                     <a class="abas-menu">Financeiro</a>
                 </div>
