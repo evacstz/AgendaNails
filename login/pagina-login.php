@@ -38,7 +38,7 @@
 
         <div class="redirecionamento">
             <p>Ainda não tem uma conta?</p>
-            <a href="../cadastro/pagina-cadastro.php" class="redireciona-login-cadastro">Cadastre-se</a> 
+            <a href="../cadastro-usuario/pagina-cadastro.php" class="redireciona-login-cadastro">Cadastre-se</a> 
         </div>
     </div>
 </body>
