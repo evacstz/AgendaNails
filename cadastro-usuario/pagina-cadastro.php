@@ -31,6 +31,14 @@
             </div>
         </form>
 
+        <div class="email-cadastrado">
+            <?php
+                if (isset($_GET['erro']) && $_GET['erro'] == 2) {
+                    echo '<p>Este e-mail já está cadastrado.</p>';
+                }
+            ?>
+        </div>
+
         <div class="redirecionamento">
             <p>Já tem uma conta?</p>
             <a href="../login/pagina-login.php" class="redireciona-login-cadastro">Entre aqui</a>

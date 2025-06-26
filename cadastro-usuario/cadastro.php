@@ -19,7 +19,8 @@
         $consulta_verificacao->execute();
 
         if ($consulta_verificacao->rowCount() > 0) {
-            exit("Este email já está cadastrado.");
+            header("Location: pagina-cadastro.php?erro=2");
+            exit;
         } else {
             $consulta_insercao = $conexao->prepare("INSERT INTO usuarios (nome, email, senha) VALUES (:nome, :email, :senha)");
             $consulta_insercao->bindValue(":nome", $nome);
