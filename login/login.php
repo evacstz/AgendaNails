@@ -17,7 +17,7 @@
                 exit;
             }
         } else {
-            header("Location: ../login/pagina-login.php?erro=1");
+            header("Location: pagina-login.php?erro=1");
             exit;
         }
     } else {
