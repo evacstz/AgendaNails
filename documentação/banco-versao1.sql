@@ -14,10 +14,10 @@ CREATE TABLE clientes (
     telefone VARCHAR(20) NOT NULL
 );
 
-CREATE TABLE serviços (
-    id_serviço INT PRIMARY KEY AUTO_INCREMENT,
-    nome_serviço VARCHAR(45) NOT NULL,
-    preço DECIMAL(5, 2) NOT NULL
+CREATE TABLE servicos (
+    id_servico INT PRIMARY KEY AUTO_INCREMENT,
+    nome_servico VARCHAR(45) NOT NULL,
+    preco DECIMAL(5, 2) NOT NULL
 );
 
 CREATE TABLE agendamentos (
