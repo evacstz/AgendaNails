@@ -1,3 +1,7 @@
+<?php 
+    require_once '../protecao.php';
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -46,13 +50,13 @@
                 </div>
             </form>
             
-            <div class="servico-cadastrado">
-            <?php
-                if (isset($_GET['erro']) && $_GET['erro'] == 3) {
-                    echo '<p>Este serviço já está cadastrado.</p>';
-                }
-            ?>
-        </div>
+            <div class="erro-servico-cadastrado">
+                <?php
+                    if (isset($_GET['erro']) && $_GET['erro'] == 3) {
+                        echo '<p>Este serviço já está cadastrado.</p>';
+                    }
+                ?>
+            </div>
         </div>
     </div>
 </body>
