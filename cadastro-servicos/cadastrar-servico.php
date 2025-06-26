@@ -13,18 +13,18 @@
     }
 
     try {
-        $consulta_verifica = $conexao->prepare("SELECT * FROM servicos WHERE nome_servico = :servico");
-        $consulta_verifica->bindValue(":servico", $servico);
-        $consulta_verifica->execute();
+        $consulta_verificacao = $conexao->prepare("SELECT * FROM servicos WHERE nome_servico = :servico");
+        $consulta_verificacao->bindValue(":servico", $servico);
+        $consulta_verificacao->execute();
 
-        if ($consulta_verifica->rowCount() > 0) {
+        if ($consulta_verificacao->rowCount() > 0) {
             header("Location: pagina-servicos.php?erro=3");
             exit;
         } else {
-            $consulta_insere= $conexao->prepare("INSERT INTO servicos (nome_servico, preco) VALUES (:servico, :preco)");
-            $consulta_insere->bindValue(":servico", $servico);
-            $consulta_insere->bindValue(":preco", $preco);
-            $consulta_insere->execute();
+            $consulta_insercao= $conexao->prepare("INSERT INTO servicos (nome_servico, preco) VALUES (:servico, :preco)");
+            $consulta_insercao->bindValue(":servico", $servico);
+            $consulta_insercao->bindValue(":preco", $preco);
+            $consulta_insercao->execute();
                 header("Location: pagina-servicos.php");
         }
     } catch (PDOException $erro) { 
