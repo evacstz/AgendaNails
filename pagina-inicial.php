@@ -1,7 +1,5 @@
-<?php
-    require_once 'conexao.php';
-
-    if(isset($_SESSION['iduser']) && !empty($_SESSION['iduser'])):
+<?php 
+    require_once 'protecao.php';
 ?>
 
 <!DOCTYPE html>
@@ -37,8 +35,3 @@
     </div>
 </body>
 </html>
-
-<?php
-    else: div("Location: pagina-login.php");
-    endif;
-?>
