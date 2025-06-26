@@ -29,8 +29,10 @@
             </div>
         </div>
 
-        <div class="barra-superior">
-            <h3 class="mensagem">Seja bem-vindo(a), admin!</h3>
+        <div class="conteudo-central">
+            <div class="barra-superior">
+                <h3 class="mensagem">Seja bem-vindo(a), admin!</h3>
+            </div>
         </div>
     </div>
 </body>
