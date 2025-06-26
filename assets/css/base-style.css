@@ -48,11 +48,13 @@
     border-radius: 5px;
     text-decoration: none;
     cursor: pointer;
+    margin-right: 20px;
     transition: background 0.3s;
 }
 
 .abas-menu:hover {
     background-color: #DA8291;
+    margin-right: 20px;
 }
 
 .botao-sair-div {
@@ -137,7 +139,7 @@
 }
 
 .botao-servico {
-    height: 35px;
+    height: 45px;
     width: 180px;
     border: 0;
     border-radius: 15px;
@@ -161,12 +163,12 @@
     font-size: 16px;
 }
 
-.servico-cadastrado {
+.erro-servico-cadastrado {
     margin-top: 20px;
     padding: 5px;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 20px;
 
-    color: #cf0000;
+    color: #ff0000;
     font-weight: 500;
 }
