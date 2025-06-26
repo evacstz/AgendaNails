@@ -90,6 +90,73 @@
     font-size: 25px;
 }
 
-.botao-cadastrar {
-    display: block;
+.conteudo-central {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+#texto-cadastrar {
+    text-align: center;
+    background-color: #C12A52;
+    padding: 15px 25px;
+    border-radius: 2px;
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    font-weight: bold;
+    font-size: 18px;
+    width: 85%;
+}
+
+.rotulos {
+    text-align: center;
+    font-weight: 600;
+}
+
+.input-nome-preco {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 0;
+    border-radius: 8px;
+    background: #EDEDED;
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.25);
+    height: 35px;
+}
+
+.input-nome-preco:focus {
+    outline: 2.5px solid #DA8291;
+}
+
+.div-botao {
+    display: flex;
+    justify-content: center;
+}
+
+.botao-servico {
+    height: 35px;
+    width: 180px;
+    border: 0;
+    border-radius: 15px;
+    background-color: #EDEDED;
+    color: #c12a52;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.grupo-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.input-nome-preco {
+    padding: 5px 10px;
+    font-size: 16px;
 }
